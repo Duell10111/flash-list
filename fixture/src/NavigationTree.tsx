@@ -15,6 +15,7 @@ import { Messages, MessagesFlatList } from "./Messages";
 import TwitterBenchmark from "./twitter/TwitterBenchmark";
 import TwitterCustomCellContainer from "./twitter/CustomCellRendererComponent";
 import { Masonry } from "./Masonry";
+import HorizontalList from "./HorizontalList";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -26,6 +27,7 @@ const NavigationTree = () => {
           <Stack.Screen name="Examples" component={ExamplesScreen} />
           <Stack.Screen name="List" component={List} />
           <Stack.Screen name="PaginatedList" component={PaginatedList} />
+          <Stack.Screen name="HorizontalList" component={HorizontalList} />
           <Stack.Screen name="Twitter" component={Twitter} />
           <Stack.Screen name="Reminders" component={Reminders} />
           <Stack.Screen
